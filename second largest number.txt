@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int[] numbers = {12, 45, 78, 23, 56, 34, 90, 67};
+
+        
+        int secondLargest = findSecondLargest(numbers);
+
+        
+        System.out.println("Second largest number: " + secondLargest);
+    }
+
+    
+    public static int findSecondLargest(int[] numbers) {
+        
+        Arrays.sort(numbers);
+
+        
+        return numbers[numbers.length - 2];
+    }
+}
